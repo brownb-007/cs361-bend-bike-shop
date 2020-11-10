@@ -3,11 +3,12 @@
 class Bike
   attr_accessor :id, :color, :price, :rented
 
-  def initialize(id, color, price, rented = false)
+  def initialize(id, color, price, cargo, rented = false)
     @id = id
     @color = color
     @price = price
     @rented = rented
+    @cargo = cargo
   end
 
   def rent!
